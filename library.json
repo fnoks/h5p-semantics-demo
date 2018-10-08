@@ -1,0 +1,35 @@
+{
+  "title": "H5P Semantics Demo",
+  "description": "Only for testing all editor possibilities",
+  "machineName": "H5P.SemanticsDemo",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "license": "MIT",
+  "author": "Fnoks",
+  "embedTypes": [
+    "iframe"
+  ],
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 9
+  },
+  "preloadedCss": [
+    {
+      "path": "h5p-semantics-demo.css"
+    }
+  ],
+  "preloadedJs": [
+    {
+      "path": "h5p-semantics-demo.js"
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.ColorSelector",
+      "majorVersion": 1,
+      "minorVersion": 2
+    }
+  ]
+}

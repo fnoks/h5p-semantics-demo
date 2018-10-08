@@ -1,0 +1,249 @@
+[
+  {
+    "name": "TC_GROUP",
+    "type": "group",
+    "label": "Field: number",
+    "fields": [
+      {
+        "name": "TC_NUMBER_1",
+        "type": "number",
+        "default": 10,
+        "description": "Number. Default: 10"
+      },
+      {
+        "name": "TC_NUMBER_2",
+        "type": "number",
+        "min": 10,
+        "max": 30,
+        "step": 5,
+        "description": "Number. Min: 10, Max: 30, Step: 5"
+      },
+      {
+        "name": "TC_NUMBER_3",
+        "type": "number",
+        "decimals": 2,
+        "description": "Number. Num decimals: 2"
+      }
+    ]
+  },
+  {
+    "name": "TC_BOOLEAN",
+    "type": "group",
+    "label": "Field: boolean",
+    "fields": [
+      {
+        "name": "TC_BOOLEAN_1",
+        "type": "boolean",
+        "default": true,
+        "description": "Boolean. Default: selected"
+      },
+      {
+        "name": "TC_BOOLEAN_2",
+        "type": "boolean",
+        "default": false,
+        "description": "Boolean. Default: unselected"
+      }
+    ]
+  },
+  {
+    "name": "TC_SELECT",
+    "type": "group",
+    "label": "Field: select",
+    "fields": [
+      {
+        "name": "TC_SELECT_1",
+        "type": "select",
+        "options": [
+          {
+            "value": "option1",
+            "label": "Option 1"
+          },
+          {
+            "value": "option2",
+            "label": "Option 2"
+          }
+        ],
+        "description": "Select. No default value"
+      },
+      {
+        "name": "TC_SELECT_2",
+        "type": "select",
+        "default": "option1",
+        "options": [
+          {
+            "value": "option1",
+            "label": "Option 1"
+          },
+          {
+            "value": "option2",
+            "label": "Option 2"
+          }
+        ],
+        "description": "Select. Default: Option 1"
+      }
+    ]
+  },
+  {
+    "name": "TC_GROUP",
+    "type": "group",
+    "label": "Field: text",
+    "fields": [
+      {
+        "name": "TC_TEXT_1",
+        "type": "text",
+        "maxLength": 5,
+        "description": "Plain text. MaxLength: 5"
+      },
+      {
+        "name": "TC_TEXT_2",
+        "type": "text",
+        "widget": "textarea",
+        "description": "Textarea"
+      },
+      {
+        "name": "TC_TEXT_3",
+        "type": "text",
+        "widget": "html",
+        "description": "Wysiwyg - default tags"
+      },
+      {
+        "name": "TC_TEXT_4",
+        "type": "text",
+        "widget": "html",
+        "description": "Wysiwyg - all tags",
+        "tags": [
+          "strong",
+          "em",
+          "sub",
+          "sup",
+          "u",
+          "strike",
+          "ul",
+          "ol",
+          "blockquote",
+          "a",
+          "table",
+          "hr"
+        ]
+      },
+      {
+        "name": "TC_TEXT_5",
+        "type": "text",
+        "widget": "colorSelector",
+        "description": "ColorSelector"
+      }
+    ]
+  },
+  {
+    "name": "TC_LIST",
+    "type": "group",
+    "label": "Field: list",
+    "fields": [
+      {
+        "name": "TC_LIST_1",
+        "type": "list",
+        "min": 2,
+        "max": 3,
+        "description": "List with single texfield. Min:2, Max: 3",
+        "field": {
+          "name": "text",
+          "type": "text"
+        }
+      },
+      {
+        "name": "TC_LIST_2",
+        "type": "list",
+        "description": "List with group with single text field.",
+        "field": {
+          "name": "group",
+          "type": "group",
+          "fields": [
+            {
+              "name": "text",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      {
+        "name": "TC_LIST_3",
+        "type": "list",
+        "description": "List with group with two text fields.",
+        "field": {
+          "name": "group",
+          "type": "group",
+          "fields": [
+            {
+              "name": "text1",
+              "type": "text"
+            },
+            {
+              "name": "text2",
+              "type": "text"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "TC_FILE",
+    "type": "group",
+    "label": "Field: files",
+    "fields": [
+      {
+        "name": "TC_FILE",
+        "type": "file"
+      },
+      {
+        "name": "TC_IMAGE",
+        "type": "image"
+      },
+      {
+        "name": "TC_VIDEO",
+        "type": "video"
+      },
+      {
+        "name": "TC_AUDIO",
+        "type": "audio"
+      }
+    ]
+  },
+  {
+    "name": "TC_LIBRARY",
+    "type": "group",
+    "label": "Field: library",
+    "fields": [
+      {
+        "name": "TC_LIBRARY_1",
+        "label": "TC_LIBRARY_1",
+        "type": "library",
+        "options": [
+          "H5P.Text 1.1",
+          "H5P.Image 1.0"
+        ],
+        "description": "Library selector (Text & Image)"
+      },
+      {
+        "name": "TC_LIBRARY_2",
+        "label": "TC_LIBRARY_2",
+        "type": "library",
+        "options": [
+          "H5P.Text 1.1"
+        ],
+        "description": "Library selector - single library"
+      },
+      {
+        "name": "TC_LIBRARY_3",
+        "label": "TC_LIBRARY_3",
+        "type": "library",
+        "options": [
+          {
+            "library": "H5P.Text 1.1"
+          }
+        ],
+        "description": "Library selector (Text & Image)"
+      }
+    ]
+  }
+]
