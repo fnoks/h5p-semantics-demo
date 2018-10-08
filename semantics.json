@@ -1,6 +1,6 @@
 [
   {
-    "name": "TC_GROUP",
+    "name": "TC_NUMBER",
     "type": "group",
     "label": "Field: number",
     "fields": [
